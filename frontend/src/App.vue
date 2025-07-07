@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import Cartas from './components/Cartas.vue';
-import DeckCardGrid from './components/DeckCardGrid.vue';
+import { RouterView } from 'vue-router';
 </script>
 
 <template>
-  <Cartas />
-  <DeckCardGrid />
+
+<RouterView />
 </template>
