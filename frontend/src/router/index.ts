@@ -18,9 +18,10 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue'),
     },
     {
-      path: '/deck1-essentials',
-      name: 'deck1',
+      path: '/:deckSlug',
+      name: 'deck',
       component: () => import('../views/CardStudyView.vue'),
+      props: true,
     },
   ],
 })
