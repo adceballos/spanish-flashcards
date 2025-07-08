@@ -4,9 +4,9 @@ import DeckCard from './DeckCard.vue'
 // TODO: fetch this info from a json database so changes only need to be made in one place.
 const deckCards = [
   { deckNum: 1, title: 'Essentials', description: 'Greetings, Politeness, and Basic Phrases', deckSlug: "/deck1-essentials" },
-  { deckNum: 2, title: 'Everyday Vocabulary', description: 'Asking and answering everyday questions with confidence', deckSlug: '/deck2-questions-and-responses' },
-  { deckNum: 3, title: 'Verbs in Action', description: 'Talk about your home, family, and daily routines', deckSlug: '/deck3-daily-life-and-household-vocab' },
-  { deckNum: 4, title: 'Verbs in Action', description: 'Order food, express preferences, and navigate menus with ease', deckSlug: '/deck4-food-drinks-and-ordering' },
+  { deckNum: 2, title: 'Questions and Responses', description: 'Asking and answering everyday questions with confidence', deckSlug: '/deck2-questions-and-responses' },
+  { deckNum: 3, title: 'Daily Life and Household Vocabulary', description: 'Talk about your home, family, and daily routines', deckSlug: '/deck3-daily-life-and-household-vocab' },
+  { deckNum: 4, title: 'Food, Drinks, and Ordering', description: 'Order food, express preferences, and navigate menus with ease', deckSlug: '/deck4-food-drinks-and-ordering' },
 ]
 
 </script>
