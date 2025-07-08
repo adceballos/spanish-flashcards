@@ -1,0 +1,14 @@
+{
+    "deck1-essentials": [
+        { "front": "Hola", "back": "Hello" },
+        { "front": "Adios", "back": "Goodbye" }
+    ],
+    "deck2-everyday-vocabulary": [
+        { "front": "Casa", "back": "House" },
+        { "front": "Comida", "back": "Food" }
+    ],
+    "deck3-verbs-in-action": [
+        { "front": "Ser", "back": "To be (essential/permanent quality)" },
+        { "front": "Haber", "back": "To have(to do something, auxiliary verb)" }
+    ]
+}
