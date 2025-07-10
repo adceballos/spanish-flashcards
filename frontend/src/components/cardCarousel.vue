@@ -61,10 +61,16 @@ onUnmounted(() => {
         :back="cards[activeIndex].back"
       />
 
-      <div class="flex items-center justify-center mt-4 gap-x-8">
+      <div class="flex items-center justify-center mt-4 gap-x-5">
         <button v-on:click="prevCard" :disabled="activeIndex === 0" aria-label="Previous card" class="text-2xl">
           <ArrowLeftCircleIcon class="w-12 h-12 hover:text-slate-400 transition-colors duration-250"/>
         </button>
+
+        <div class="w-16 text-center">
+          <p class="text-lg">
+            {{ activeIndex + 1 }} / {{ cards.length }}
+          </p>
+        </div>
 
         <button @click="nextCard" :disabled="activeIndex === cards.length - 1" aria-label="Next card" class="text-2xl">
           <ArrowRightCircleIcon class="w-12 h-12 hover:text-slate-400 transition-colors duration-250"/>
