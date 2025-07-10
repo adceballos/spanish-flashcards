@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import CardCarousel from '../components/cardCarousel.vue';
+import CardList from '../components/CardList.vue';
 import { ref, onMounted } from 'vue';
 
 // destructure 'deckSlug' prop passed from the dynamic route defined in 'index.ts' (via 'props: true')
@@ -24,5 +24,5 @@ onMounted(async () => {
 </script>
 
 <template>
-  <CardCarousel :cards="cards"/>
+  <CardList :cards="cards"/>
 </template>
