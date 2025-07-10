@@ -62,8 +62,14 @@ onUnmounted(() => {
       />
 
       <div class="flex items-center justify-center mt-4 gap-x-5">
-        <button v-on:click="prevCard" :disabled="activeIndex === 0" aria-label="Previous card" class="text-2xl">
-          <ArrowLeftCircleIcon class="w-12 h-12 hover:text-slate-400 transition-colors duration-250"/>
+        <button 
+          @:click="prevCard" 
+          :disabled="activeIndex === 0" 
+          :class="{ 'text-gray-500 pointer-events-none' : activeIndex === 0 }" 
+          aria-label="Previous card" 
+          class="text-2xl"
+        >
+          <ArrowLeftCircleIcon class="w-12 h-12 hover:text-blue-300 transition-colors duration-250"/>
         </button>
 
         <div class="w-16 text-center">
@@ -72,8 +78,14 @@ onUnmounted(() => {
           </p>
         </div>
 
-        <button @click="nextCard" :disabled="activeIndex === cards.length - 1" aria-label="Next card" class="text-2xl">
-          <ArrowRightCircleIcon class="w-12 h-12 hover:text-slate-400 transition-colors duration-250"/>
+        <button 
+          @click="nextCard" 
+          :disabled="activeIndex === cards.length - 1" 
+          aria-label="Next card" 
+          :class="{ 'text-gray-500 pointer-events-none' : activeIndex === cards.length - 1 }" 
+          class="text-2xl"
+        >
+          <ArrowRightCircleIcon class="w-12 h-12 hover:text-blue-300 transition-colors duration-250"/>
         </button>
       </div>
     </div>
