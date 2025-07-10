@@ -13,7 +13,7 @@ const cards = ref<Card[]>([])
 
 onMounted(async () => {
     try {
-        const response = await fetch('/public/data/decks.json');
+        const response = await fetch('/data/decks.json');
         const decks = await response.json();
         cards.value = decks[deckSlug] ?? [];
     } catch (error) {
