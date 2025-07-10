@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type Ref, ref } from 'vue';
+import { type Ref, ref, onMounted, onUnmounted } from 'vue';
 
 defineProps<{ 
   front: string;
@@ -8,6 +8,22 @@ defineProps<{
 
 // explicitly typed for practice, can be written as 'const flipped = ref(false)' for implicit
 const isFlipped: Ref<Boolean> = ref(false);
+
+const handleKey = (e: KeyboardEvent) => {
+  if (e.key === "ArrowUp") {
+    isFlipped.value = !isFlipped.value
+  } else if (e.key === "ArrowDown") {
+    isFlipped.value = !isFlipped.value
+  }
+};
+
+onMounted(() => {
+  window.addEventListener("keydown", handleKey)
+});
+
+onUnmounted(() => {
+  window.removeEventListener("keydown", handleKey)
+});
 </script>
 
 <template>
