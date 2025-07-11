@@ -15,9 +15,9 @@ import Cartas from './Cartas.vue'
         All the words and phrases you need. <br>
         No fluff, just flashcards.
       </h2>
-      <button class="bg-slate-700 px-6 py-3 rounded-full hover:bg-slate-600 hover:scale-105 transition duration-200 w-fit">
+      <a href="#decks" class="bg-slate-700 px-6 py-3 rounded-full hover:bg-slate-600 hover:scale-105 transition duration-200 w-fit">
         Get Started
-      </button>
+      </a>
     </div>
 
     <div class="mr-9">
