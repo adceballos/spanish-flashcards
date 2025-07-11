@@ -1,11 +1,6 @@
-<script setup lang="ts">
-
-</script>
-
-// TODO: fix whitespace around car triggering hover rotation effect/only rotate when cursor hovers card
 <template>
-    <div class="perspective-normal group flex justify-center mb-32 -mt-24">
-        <div class="relative group w-74 h-50 duration-500 transform-3d transition-transform group-hover:[transform:rotate3d(-1,1,0,180deg)] -rotate-45">
+    <div class="perspective-normal flex justify-center mb-32 -mt-24">
+        <div class="relative w-74 h-50 duration-500 transform-3d transition-transform hover:[transform:rotate3d(-1,1,0,180deg)] -rotate-45">
             <div class="cinzel tracking-wider absolute w-full h-full backface-hidden bg-gray-500 text-white rounded-2xl flex items-center justify-center shadow-2xl text-3xl">
                 Cartas
             </div>
