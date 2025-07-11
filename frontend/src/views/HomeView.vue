@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import Cartas from '../components/Cartas.vue';
+import Hero from '../components/Hero.vue';
 import DeckCardGrid from '../components/DeckCardGrid.vue';
 </script>
 
 <template>
   <main>
-    <Cartas />
+    <Hero />
     <DeckCardGrid />
   </main>
 </template>

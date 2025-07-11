@@ -106,7 +106,7 @@
     "deck4-food-drinks-and-ordering": {
         "deckNum": 4,
         "deckSlug": "/deck4-food-drinks-and-ordering",
-        "title": "Daily Life and Household Vocabulary",
+        "title": "Food, Drinks, and Ordering",
         "description": "Order food, express preferences, and navigate menus with ease",
         "cards": [
             { "front": "El desayuno", "back": "Breakfast" },
