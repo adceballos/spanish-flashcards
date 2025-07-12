@@ -53,7 +53,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="flex flex-col items-center">
+  <div class="flex flex-col items-center justify-center min-h-screen">
     <div v-if="cards.length > 0">
       <Card
         :key="activeIndex"
