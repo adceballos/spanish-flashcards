@@ -34,11 +34,11 @@ onUnmounted(() => {
       <div @click="isFlipped = !isFlipped" :class="{ 'rotate-x-180': isFlipped }" class="relative w-full h-full transition-transform duration-300 transform-3d">
         
         <div class="absolute w-full h-full backface-hidden bg-gray-500 text-white rounded-2xl shadow-xl flex items-center justify-center flex-col">
-          <h1 class="text-5xl">{{ front }}</h1>
+          <h1 class="text-5xl text-center">{{ front }}</h1>
         </div>
 
         <div class="absolute w-full h-full backface-hidden rotate-x-180 bg-slate-700 text-white rounded-2xl shadow-xl flex items-center justify-center flex-col">
-          <h1 class="text-5xl">{{ back }}</h1>
+          <h1 class="text-5xl text-center">{{ back }}</h1>
         </div>
 
       </div>
