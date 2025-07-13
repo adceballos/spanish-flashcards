@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-
+// TODO(maybe): auto flip component every few seconds rather than on hover
 const titlesInOtherLanguages = [
   { text: "Giro Fluido", language: "Spanish" },
   { text: "Retournement Fluide", language: "French" },

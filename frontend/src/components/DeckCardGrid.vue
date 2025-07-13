@@ -42,7 +42,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div id="decks" class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-7xl mx-auto py-4 px-12">
+  <div id="decks" class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-7xl mx-auto py-4 px-12">
     <DeckCard v-for="deck in decks"
       :key="deck.deckNum"
       :deckSlug="deck.deckSlug"
