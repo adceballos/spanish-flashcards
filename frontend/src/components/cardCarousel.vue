@@ -53,7 +53,8 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="flex flex-col items-center justify-center min-h-screen">
+  <!-- 'min-h-[calc(100vh-4rem)]' sets height to be height of screen - height of header component. Used to remove scroll on page. -->
+  <div class="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)]">
     <div v-if="cards.length > 0">
       <Card
         :key="activeIndex"
